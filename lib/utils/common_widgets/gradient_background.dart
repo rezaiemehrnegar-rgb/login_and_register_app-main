@@ -15,7 +15,9 @@ class GradientBackground extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DecoratedBox(
-      decoration: BoxDecoration(gradient: LinearGradient(colors: colors)),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(colors: colors),
+      ),
       child: Padding(
         padding: const EdgeInsets.all(20),
         child: Column(
