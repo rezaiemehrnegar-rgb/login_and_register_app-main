@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'routes.dart';
 import 'utils/helpers/navigation_helper.dart';
 import 'utils/helpers/snackbar_helper.dart';

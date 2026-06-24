@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../values/app_strings.dart';
 
 class InvalidRoute extends StatelessWidget {
@@ -12,7 +11,10 @@ class InvalidRoute extends StatelessWidget {
         child: Text(
           AppStrings.uhOhPageNotFound,
           textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+          style: TextStyle(
+            fontSize: 28,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
     );

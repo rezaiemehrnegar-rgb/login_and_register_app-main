@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:login_register_app/utils/helpers/snackbar_helper.dart';
-
 import '../components/app_text_form_field.dart';
 import '../utils/common_widgets/gradient_background.dart';
 import '../utils/helpers/navigation_helper.dart';
@@ -54,7 +53,9 @@ class _RegisterPageState extends State<RegisterPage> {
     if (name.isEmpty &&
         email.isEmpty &&
         password.isEmpty &&
-        confirmPassword.isEmpty) return;
+        confirmPassword.isEmpty) {
+      return;
+    }
 
     if (AppRegex.emailRegex.hasMatch(email) &&
         AppRegex.passwordRegex.hasMatch(password) &&
@@ -84,9 +85,15 @@ class _RegisterPageState extends State<RegisterPage> {
         children: [
           const GradientBackground(
             children: [
-              Text(AppStrings.register, style: AppTheme.titleLarge),
+              Text(
+                AppStrings.register,
+                style: AppTheme.titleLarge,
+              ),
               SizedBox(height: 6),
-              Text(AppStrings.createYourAccount, style: AppTheme.bodySmall),
+              Text(
+                AppStrings.createYourAccount,
+                style: AppTheme.bodySmall,
+              ),
             ],
           ),
           Padding(

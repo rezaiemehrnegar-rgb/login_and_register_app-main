@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:login_register_app/utils/helpers/snackbar_helper.dart';
 import 'package:login_register_app/values/app_regex.dart';
-
 import '../components/app_text_form_field.dart';
 import '../resources/resources.dart';
 import '../utils/common_widgets/gradient_background.dart';
@@ -78,7 +77,10 @@ class _LoginPageState extends State<LoginPage> {
                 style: AppTheme.titleLarge,
               ),
               SizedBox(height: 6),
-              Text(AppStrings.signInToYourAccount, style: AppTheme.bodySmall),
+              Text(
+                AppStrings.signInToYourAccount,
+                style: AppTheme.bodySmall,
+              ),
             ],
           ),
           Form(
@@ -162,7 +164,11 @@ class _LoginPageState extends State<LoginPage> {
                   const SizedBox(height: 20),
                   Row(
                     children: [
-                      Expanded(child: Divider(color: Colors.grey.shade200)),
+                      Expanded(
+                        child: Divider(
+                          color: Colors.grey.shade200,
+                        ),
+                      ),
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: Text(
@@ -172,7 +178,11 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                         ),
                       ),
-                      Expanded(child: Divider(color: Colors.grey.shade200)),
+                      Expanded(
+                        child: Divider(
+                          color: Colors.grey.shade200,
+                        ),
+                      ),
                     ],
                   ),
                   const SizedBox(height: 20),
