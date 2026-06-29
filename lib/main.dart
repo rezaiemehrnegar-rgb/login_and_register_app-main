@@ -7,8 +7,9 @@ Future<void> main() async {
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(statusBarIconBrightness: Brightness.light),
   );
-  await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
-      .then(
+  await SystemChrome.setPreferredOrientations(
+    [DeviceOrientation.portraitUp],
+  ).then(
     (_) => runApp(const LoginRegisterApp()),
   );
 }
